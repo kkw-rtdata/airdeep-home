@@ -1,0 +1,17 @@
+{
+    "logpresso" : {
+        "host":"110.10.189.106",
+        "port":8889,
+        "user":"root",
+        "password":"alticast1!"
+    },
+    
+    "model_path" : {
+        "SN_RF" : "model/RF_airdeep_car_smoke_detecion_ver1.1_221222.pkl",
+        "SE_SVM" : "model/SVM_airdeep_car_smoke_classification_ver1.0_221128.pkl",
+        "SE_SEQ_XGB_2_4" : "model/TSFRESH_XGB_airdeep_car_smoke_classification_ver0.2_2_4_221216.pkl",
+	"SE_SEQ_XGB_3_6" : "model/TSFRESH_XGB_airdeep_car_smoke_classification_ver0.2_3_6_230103.pkl",
+	"SE_SEQ_XGB_3_6_V2" : "model/TSFRESH_XGB_airdeep_car_smoke_classification_ver1.1_3_6_230614.pkl",
+	"SE_SEQ_XGB_2_4_V2" : "model/TSFRESH_XGB_airdeep_car_smoke_classification_ver1.0_2_4_230503.pkl"
+    }
+}

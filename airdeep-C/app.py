@@ -92,8 +92,11 @@ def predict_seq(model):
     query = np.array([query_df])
     
     # append prediction result
-    pred = models[model].predict(query)
-    pred += 1
+    prob = models[model].predict_proba(query)[0][0]
+    if prob > 0.99:
+        pred = np.array([1])
+    else:
+        pred = np.array([2])
 
     # logging 
     result = {'data' : data, 'model_name' : model, 'vote' : int(pred)}
